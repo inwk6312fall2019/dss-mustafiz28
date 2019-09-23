@@ -1,0 +1,8 @@
+def is_anagram(string1, string2):
+    return sorted(string1) == sorted(string2)
+
+print(is_anagram('mustafiz', 'afumsitz'))
+print(is_anagram('bob', 'odd'))
+print(is_anagram('A', 'a'))
+print(is_anagram('', 'any'))
+print(is_anagram('abba', 'baba'))

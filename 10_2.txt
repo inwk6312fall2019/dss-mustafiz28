@@ -1,0 +1,11 @@
+def cumsum(list1):
+  result = []
+  total = 0
+  for item in list1:
+    total += item
+    result.append(total)
+  return result
+
+
+t = [1,2,3,4,5,6,7]
+print("Cumulative sum :",cumsum(t))

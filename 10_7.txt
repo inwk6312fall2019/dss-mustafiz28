@@ -1,0 +1,19 @@
+def has_duplicates(list1):
+  if len(list1) == 0:
+    return "List doesn't contain anything, simply empty."
+  elif len(list1) == 1:
+    return "List contains only one item."
+   
+  previous_item = list1[0]
+  for item in sorted(list1):
+    if previous_item == item:
+      return True
+      previous_item = item
+  return False
+
+t = [11,21,33,7,17,11,23 ]
+print(has_duplicates(t))
+print(has_duplicates(['m','u','s','t','a','f','i','z','U','r']))
+print(has_duplicates([]))
+print(has_duplicates(['']))
+print(has_duplicates([15,7,19,22,24,1,88,5]))
