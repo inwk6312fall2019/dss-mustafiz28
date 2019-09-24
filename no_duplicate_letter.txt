@@ -1,0 +1,15 @@
+def no_duplicate(str):
+  t = list()
+  str1 = sorted(str)
+  previous_letter = " "
+  for char in str1:
+    if char == previous_letter:
+      pass
+    else:
+      t.append(char)
+      previous_letter = char
+  return (t)
+
+print(no_duplicate("mustafiz"))
+print(no_duplicate("Mustafiur"))
+print(no_duplicate("InternetworkIng"))
