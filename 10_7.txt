@@ -1,17 +1,15 @@
 def has_duplicate(list1):
-  list2 = []
-  for item in list1:
-    if item not in list2:
-      list2.append(item)
-    else:
-      list2[item] +=1
-      if list2[item]>=2:
-        return True
-    return False
+  #t = list (list1)  #t = []
+  t = list1 [:]
+  t.sort()
+  for item in range(len(t)-1):
+    if t[item] == t[item+1]:
+      return False
+  return True
 
-list3 = [1,2,3,2,4,5]
+list3 = [1,2,3,4,5]
 list4 = ["a","b","c","d","b"] 
-list5 = [11,22,33,44,45]
+list5 = [11,22,33,44,45,11]
 print(has_duplicate(list3))
 print(has_duplicate(list4))
 print(has_duplicate(list5))
