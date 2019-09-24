@@ -1,5 +1,5 @@
 def has_duplicate(list1):
-  #t = list (list1)  #t = []
+  #t = list (list1)  
   t = list1 [:]
   t.sort()
   for item in range(len(t)-1):
