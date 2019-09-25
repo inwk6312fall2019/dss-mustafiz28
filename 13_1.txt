@@ -1,0 +1,14 @@
+import string
+myfile=open("words.txt")
+line=myfile.readline()
+collection = " "
+
+for line in myfile:
+  word = line.split()
+  word = line.strip()
+  for char in word:
+    if ((char in string.punctuation) or (char in string.whitespace)):
+      pass
+    else:
+      collection += char.lower()
+print(collection)
