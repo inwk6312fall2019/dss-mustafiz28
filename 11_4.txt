@@ -1,0 +1,13 @@
+lst = list(input('Enter any string: '))
+print(lst)
+def has_duplicates(list1):
+    index = 0
+    list2 = sorted(list1)
+    while index < len(list2) - 1:
+        if list2[index] == list2[index + 1]:
+            index += 2
+            return True
+        else:
+            index += 1
+    return False
+print(has_duplicates(lst))

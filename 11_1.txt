@@ -1,0 +1,11 @@
+def words_in_dictionary():
+    word_list = dict()
+    myfile = open('words.txt')
+    for line in myfile:
+        word = line.strip()
+        if word not in word_list:
+            word_list[word] = None
+    return word_list
+print(words_in_dictionary())
+
+#words_in_dictionary()

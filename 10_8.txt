@@ -1,0 +1,20 @@
+import random 
+
+def has_duplicates(t):
+  list1 = list(t)	
+  list1.sort()	
+  for i in range(len(t) - 1):		
+    if list1[i] == list1[i+1]:			
+      return True	
+  return False
+  
+def random_birthday(n):
+	birthday_list = []
+	for i in range(n):
+		birthday = random.randint(1, 365)
+		birthday_list.append(birthday)
+	return sorted(birthday_list)
+
+show_random_list=(random_birthday(23))
+print(show_random_list)
+print(has_duplicates(show_random_list))
