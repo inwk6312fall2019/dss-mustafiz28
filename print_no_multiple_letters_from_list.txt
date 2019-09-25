@@ -1,0 +1,19 @@
+def no_duplicate(list1):
+  t = list(list1)
+  t.sort ()
+  print(t)
+  t1 = list ()
+  for item in range(len(t)):
+      
+    if item == len(t)-1:
+        t1.append(t[item])
+        return t1
+        
+    if t[item]==t[item+1]:
+      pass
+    else:
+      t1.append(t[item])   
+
+
+t2 = ["i","n","t","e","r","n","e","t","w","o","r","k","i","n","g"]
+print(no_duplicate(t2))
